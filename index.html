@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form id="searchForm">
+          <input
+            class="form-control m-auto"
+            type="text"
+            placeholder="Search todos"
+            id="searchText"
+            autocomplete="off"
+          />
+        </form>
+      </header>
+
+      <ul class="list-group todos mx-auto text-light" id="todosUL">
+        <!-- <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <div class="col-md-5">
+            <span id="todoName">Learn New Techs</span>
+          </div>
+
+          <div class="col-md-7 d-flex justify-content-end">
+            <div class="row gx-5">
+              <div class="col-4">
+                <span class="badge bg-primary" id="currentStatus">To do</span>
+              </div>
+              <div class="col-6">
+                <select class="form-control" id="statusOptions">
+                  <option value="0" selected disabled>Status</option>
+                  <option value="1" class="hidden">To do</option>
+                  <option value="2">In progress</option>
+                  <option value="3">Done</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <i class="far fa-trash-alt delete py-2"></i>
+              </div>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+      <div id="noSearchText" class="text-white text-center ">No Todos Meet The Search Criteria</div>
+      <div id="noFavouriteTodos" class="text-white text-center ">No Favourite Todos</div>
+      <form class="text-center my-4" id="addForm">
+        <input
+          id="addText"
+          class="form-control m-auto"
+          type="text"
+          placeholder="Add a new todo..."
+          autocomplete="off"
+        />
+      </form>
+      <div class="d-flex justify-content-between">
+        <button id="btn" class="btn form-control mr-2">Favourite Todos</button>
+        <button id="Showbtn" class="btn form-control ">Show All Todos</button>
+      </div>
+    </div>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
